@@ -116,7 +116,7 @@ class _Personal_SettingPageState extends State<Personal_SettingPage> {
                   children: [
                     //===========================================Name:=======================================
                     Text(
-                      "Name",
+                      "Name*",
                       style: TextStyle(
                           fontSize: getProportionateScreenHeight(16),
                           color: Colors.black,
@@ -130,7 +130,7 @@ class _Personal_SettingPageState extends State<Personal_SettingPage> {
                       height: getProportionateScreenHeight(25),
                     ),
                     Text(
-                      "Contact",
+                      "Contact*",
                       style: TextStyle(
                           fontFamily: "Poppins",
                           fontSize: getProportionateScreenHeight(16),
@@ -145,7 +145,7 @@ class _Personal_SettingPageState extends State<Personal_SettingPage> {
                       height: getProportionateScreenHeight(25),
                     ),
                     Text(
-                      "Date of Birth",
+                      "Date of Birth*",
                       style: TextStyle(
                           fontFamily: "Poppins",
                           fontSize: getProportionateScreenHeight(16),
@@ -219,7 +219,7 @@ class _Personal_SettingPageState extends State<Personal_SettingPage> {
                       height: getProportionateScreenHeight(25),
                     ),
                     Text(
-                      "Country of residence",
+                      "Country of residence*",
                       style: TextStyle(
                           fontFamily: "Poppins",
                           fontSize: getProportionateScreenHeight(16),
@@ -265,7 +265,7 @@ class _Personal_SettingPageState extends State<Personal_SettingPage> {
                       height: getProportionateScreenHeight(25),
                     ),
                     Text(
-                      "Preffered language",
+                      "Preffered language*",
                       style: TextStyle(
                           fontFamily: "Poppins",
                           fontSize: getProportionateScreenHeight(16),
