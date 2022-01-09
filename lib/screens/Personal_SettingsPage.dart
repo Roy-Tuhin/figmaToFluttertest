@@ -30,7 +30,7 @@ class _Personal_SettingPageState extends State<Personal_SettingPage> {
       onTap: () => FocusScope.of(context)
           .unfocus(), // Will dispaire keyboard on tap on empty place
       child: Scaffold(
-          backgroundColor: Color(0xffffffff),
+          backgroundColor: Colors.white,
           appBar: PreferredSize(
             preferredSize: Size.fromHeight(getProportionateScreenHeight(60)),
             child: AppBar(

@@ -355,7 +355,7 @@ class _Payment_ScreenPageState extends State<Payment_ScreenPage> {
                   //   ],
                   // ),
                   SizedBox(
-                    height: getProportionateScreenHeight(177),
+                    height: getProportionateScreenHeight(150),
                   ),
                   Container(
                     height: getProportionateScreenHeight(50),
