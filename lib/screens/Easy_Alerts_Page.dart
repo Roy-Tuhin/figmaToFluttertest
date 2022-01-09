@@ -120,6 +120,7 @@ class _Easy_Alerts_PageState extends State<Easy_Alerts_Page> {
                   title: Text(
                     "Gentle Notification",
                     style: TextStyle(
+                      fontWeight: FontWeight.w600,
                       fontFamily: "Poppins",
                     ),
                   ),
@@ -158,6 +159,7 @@ class _Easy_Alerts_PageState extends State<Easy_Alerts_Page> {
                 title: Text(
                   "Banners",
                   style: TextStyle(
+                    fontWeight: FontWeight.w600,
                     fontFamily: "Poppins",
                   ),
                 ),
@@ -196,6 +198,7 @@ class _Easy_Alerts_PageState extends State<Easy_Alerts_Page> {
               child: Text(
                 "Lock Screen Notifications",
                 style: TextStyle(
+                  fontWeight: FontWeight.w600,
                   fontSize: getProportionateScreenHeight(16),
                   fontFamily: "Poppins",
                 ),
@@ -281,6 +284,7 @@ class _Easy_Alerts_PageState extends State<Easy_Alerts_Page> {
                 title: Text(
                   "Allow interruptions",
                   style: TextStyle(
+                    fontWeight: FontWeight.w600,
                     fontFamily: "Poppins",
                   ),
                 ),
@@ -318,6 +322,7 @@ class _Easy_Alerts_PageState extends State<Easy_Alerts_Page> {
                 title: Text(
                   "Promotions",
                   style: TextStyle(
+                    fontWeight: FontWeight.w600,
                     fontFamily: "Poppins",
                   ),
                 ),
@@ -355,6 +360,7 @@ class _Easy_Alerts_PageState extends State<Easy_Alerts_Page> {
                 title: Text(
                   "Reminders",
                   style: TextStyle(
+                    fontWeight: FontWeight.w600,
                     fontFamily: "Poppins",
                   ),
                 ),
@@ -380,6 +386,7 @@ class _Easy_Alerts_PageState extends State<Easy_Alerts_Page> {
                 subtitle: Text(
                   "Receive device notification to remind you when you are reaching a goal deadline",
                   style: TextStyle(
+                    fontWeight: FontWeight.w300,
                     fontFamily: "Poppins",
                   ),
                 ),

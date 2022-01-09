@@ -89,7 +89,7 @@ class _Payment_ScreenPageState extends State<Payment_ScreenPage> {
                         fontFamily: "Poppins",
                         fontSize: getProportionateScreenHeight(16),
                         color: Colors.black,
-                        fontWeight: FontWeight.w500),
+                        fontWeight: FontWeight.w600),
                   ),
                   Container(
                     decoration: BoxDecoration(
@@ -128,7 +128,7 @@ class _Payment_ScreenPageState extends State<Payment_ScreenPage> {
                         fontFamily: "Poppins",
                         fontSize: getProportionateScreenHeight(16),
                         color: Colors.black,
-                        fontWeight: FontWeight.w500),
+                        fontWeight: FontWeight.w600),
                   ),
                   Container(
                     decoration: BoxDecoration(
@@ -176,7 +176,7 @@ class _Payment_ScreenPageState extends State<Payment_ScreenPage> {
                                 style: TextStyle(
                                     fontFamily: "Poppins",
                                     fontSize: 16,
-                                    fontWeight: FontWeight.w500),
+                                    fontWeight: FontWeight.w600),
                               ),
                               Container(
                                 decoration: BoxDecoration(
@@ -231,7 +231,7 @@ class _Payment_ScreenPageState extends State<Payment_ScreenPage> {
                                     style: TextStyle(
                                         fontFamily: "Poppins",
                                         fontSize: 16,
-                                        fontWeight: FontWeight.w500),
+                                        fontWeight: FontWeight.w600),
                                   ),
                                   GestureDetector(
                                     onTap: () => () {
