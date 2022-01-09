@@ -69,7 +69,6 @@ class _Payment_ScreenPageState extends State<Payment_ScreenPage> {
                     height: getProportionateScreenHeight(10),
                   ),
                   Text(
-                    //"$RandomNumber",
                     "Enter your credit/debit card  information. We will save  this  card  so you can use it again later",
                     style: TextStyle(
                         fontFamily: "Poppins",
@@ -83,7 +82,6 @@ class _Payment_ScreenPageState extends State<Payment_ScreenPage> {
 
                   //=============================================1st field=============
                   Text(
-                    //"$RandomNumber",
                     "Card Number",
                     style: TextStyle(
                         fontFamily: "Poppins",
@@ -122,7 +120,6 @@ class _Payment_ScreenPageState extends State<Payment_ScreenPage> {
                     height: getProportionateScreenHeight(20),
                   ),
                   Text(
-                    //"$RandomNumber",
                     "Cardholder name",
                     style: TextStyle(
                         fontFamily: "Poppins",
@@ -180,7 +177,6 @@ class _Payment_ScreenPageState extends State<Payment_ScreenPage> {
                               ),
                               Container(
                                 decoration: BoxDecoration(
-                                  // color: kSecondaryColor.withOpacity(0.1),
                                   color: Color(0xFFf0f0f0),
                                   borderRadius: BorderRadius.circular(15),
                                 ),
@@ -262,7 +258,6 @@ class _Payment_ScreenPageState extends State<Payment_ScreenPage> {
                               ),
                               Container(
                                 decoration: BoxDecoration(
-                                  // color: kSecondaryColor.withOpacity(0.1),
                                   color: Color(0xFFf0f0f0),
                                   borderRadius: BorderRadius.circular(15),
                                 ),
