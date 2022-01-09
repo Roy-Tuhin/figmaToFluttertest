@@ -362,6 +362,7 @@ class _Payment_ScreenPageState extends State<Payment_ScreenPage> {
                     width: getProportionateScreenWidth(340),
                     child: Container(
                         decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(6),
                           gradient: LinearGradient(
                               begin: Alignment.centerLeft,
                               end: Alignment.centerRight,
@@ -371,11 +372,6 @@ class _Payment_ScreenPageState extends State<Payment_ScreenPage> {
                               ]),
                         ),
                         child: TextButton(
-                          style: TextButton.styleFrom(
-                            shape: RoundedRectangleBorder(
-                                borderRadius: BorderRadius.circular(20)),
-                            primary: Colors.white,
-                          ),
                           onPressed: () {},
                           child: Text(
                             "ADD CARD",

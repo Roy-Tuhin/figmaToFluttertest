@@ -17,6 +17,8 @@ class _Easy_Alerts_PageState extends State<Easy_Alerts_Page> {
   bool bannerToggled = false;
   bool gentleNotiToggled = true;
   bool allowInterruptionsToggled = true;
+  bool promotionsToggled = true;
+  bool remindersToggled = true;
   int _radioSelected = 2;
 
   @override
@@ -330,10 +332,10 @@ class _Easy_Alerts_PageState extends State<Easy_Alerts_Page> {
                     toggleColor: Colors.white,
                     borderRadius: 10.0,
                     activeColor: Color(0xff550EB9),
-                    value: allowInterruptionsToggled,
+                    value: promotionsToggled,
                     onToggle: (value) {
                       setState(() {
-                        allowInterruptionsToggled = value;
+                        promotionsToggled = value;
                       });
                     },
                   ),
@@ -367,10 +369,10 @@ class _Easy_Alerts_PageState extends State<Easy_Alerts_Page> {
                     toggleColor: Colors.white,
                     borderRadius: 10.0,
                     activeColor: Color(0xff550EB9),
-                    value: allowInterruptionsToggled,
+                    value: remindersToggled,
                     onToggle: (value) {
                       setState(() {
-                        allowInterruptionsToggled = value;
+                        remindersToggled = value;
                       });
                     },
                   ),

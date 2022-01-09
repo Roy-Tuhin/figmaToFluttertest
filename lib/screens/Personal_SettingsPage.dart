@@ -162,37 +162,55 @@ class _Personal_SettingPageState extends State<Personal_SettingPage> {
                       margin: EdgeInsets.only(top: 10),
                       child: Padding(
                         padding: const EdgeInsets.all(8.0),
-                        child: DateTimePicker(
-                          decoration: InputDecoration(
-                            border: InputBorder.none,
-                          ),
-                          dateMask: 'dd/MM/yyyy',
-                          initialValue: DateTime.now().toString(),
-                          type: DateTimePickerType.date,
-                          style: TextStyle(
-                            fontWeight: FontWeight.w400,
-                            fontSize: getProportionateScreenHeight(16),
-                            fontFamily: 'Poppins',
-                            color: Color(0xff362477),
-                          ),
-                          firstDate: DateTime(1800),
-                          lastDate: DateTime(2050),
-                          // This will add one year from current date
-                          validator: (value) {
-                            return null;
-                          },
-                          onChanged: (value) {
-                            if (value.isNotEmpty) {
-                              setState(() {
-                                // _selectedDate = value;
-                              });
-                            }
-                          },
-                          onSaved: (value) {
-                            if (value!.isNotEmpty) {
-                              // _selectedDate = value;
-                            }
-                          },
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            Expanded(
+                              child: DateTimePicker(
+                                decoration: InputDecoration(
+                                  border: InputBorder.none,
+                                ),
+                                dateMask: 'dd/MM/yyyy',
+                                initialValue: DateTime.now().toString(),
+                                type: DateTimePickerType.date,
+                                style: TextStyle(
+                                  fontWeight: FontWeight.w400,
+                                  fontSize: getProportionateScreenHeight(16),
+                                  fontFamily: 'Poppins',
+                                  color: Color(0xff362477),
+                                ),
+                                firstDate: DateTime(1800),
+                                lastDate: DateTime(2050),
+                                // This will add one year from current date
+                                validator: (value) {
+                                  return null;
+                                },
+                                onChanged: (value) {
+                                  if (value.isNotEmpty) {
+                                    setState(() {
+                                      // _selectedDate = value;
+                                    });
+                                  }
+                                },
+                                onSaved: (value) {
+                                  if (value!.isNotEmpty) {
+                                    // _selectedDate = value;
+                                  }
+                                },
+                              ),
+                            ),
+                            Expanded(
+                              child: Padding(
+                                padding:
+                                    const EdgeInsets.symmetric(horizontal: 150),
+                                child: Icon(
+                                  Icons.calendar_today_outlined,
+                                  color: Colors.grey,
+                                  size: 20,
+                                ),
+                              ),
+                            ),
+                          ],
                         ),
                       ),
                     ),
@@ -315,13 +333,11 @@ class _Personal_SettingPageState extends State<Personal_SettingPage> {
                     height: getProportionateScreenHeight(50),
                     width: getProportionateScreenWidth(340),
                     child: Container(
-                        decoration: BoxDecoration(color: Color(0xffE5E5E5)),
+                        decoration: BoxDecoration(
+                          color: Color(0xffE5E5E5),
+                          borderRadius: BorderRadius.circular(6),
+                        ),
                         child: TextButton(
-                          style: TextButton.styleFrom(
-                            shape: RoundedRectangleBorder(
-                                borderRadius: BorderRadius.circular(20)),
-                            primary: Colors.white,
-                          ),
                           onPressed: () {
                             Navigator.push(
                               context,
@@ -349,6 +365,7 @@ class _Personal_SettingPageState extends State<Personal_SettingPage> {
                     width: getProportionateScreenWidth(340),
                     child: Container(
                         decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(6),
                           gradient: LinearGradient(
                               begin: Alignment.centerLeft,
                               end: Alignment.centerRight,
@@ -359,11 +376,6 @@ class _Personal_SettingPageState extends State<Personal_SettingPage> {
                               ]),
                         ),
                         child: TextButton(
-                          style: TextButton.styleFrom(
-                            shape: RoundedRectangleBorder(
-                                borderRadius: BorderRadius.circular(20)),
-                            primary: Colors.white,
-                          ),
                           onPressed: () {
                             Navigator.push(
                               context,
@@ -416,7 +428,7 @@ class NewCommonTextFieldWidget extends StatelessWidget {
               borderSide: BorderSide(color: Color(0xff362477))),
           enabledBorder: OutlineInputBorder(
               borderRadius: BorderRadius.all(Radius.circular(6.0)),
-              borderSide: BorderSide(color: Colors.grey)),
+              borderSide: BorderSide(color: Color(0xffb130aa))),
         ),
       ),
     );
