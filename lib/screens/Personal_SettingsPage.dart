@@ -358,8 +358,8 @@ class _Personal_SettingPageState extends State<Personal_SettingPage> {
                         )),
                   )),
               Padding(
-                  padding:
-                      const EdgeInsets.only(left: 18.0, right: 18, top: 17),
+                  padding: const EdgeInsets.only(
+                      left: 18.0, right: 18, top: 17, bottom: 18),
                   child: Container(
                     height: getProportionateScreenHeight(50),
                     width: getProportionateScreenWidth(340),
